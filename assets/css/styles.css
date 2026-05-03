@@ -714,6 +714,60 @@ section { padding: var(--space-3xl) 0; }
 .legal-body li { margin-bottom: 8px; }
 
 /* Support / Help --------------------------------------------------------- */
+.legal-shell {
+  padding: var(--space-2xl) 0;
+}
+.legal-nav {
+  position: sticky;
+  top: 110px;
+  font-size: 0.9rem;
+}
+.legal-nav h4 {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: var(--space-sm);
+}
+.legal-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.legal-nav li { margin-bottom: 10px; }
+.legal-nav a { color: var(--slate); }
+.legal-nav a:hover { color: var(--burgundy); }
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+.support-card {
+  background: var(--ivory);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-soft);
+}
+.support-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.support-card p {
+  color: var(--slate);
+  margin: 0;
+}
+.faq-section {
+  padding-top: 0;
+}
+.faq-list {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
 .support-search {
   max-width: 640px;
   margin: var(--space-lg) auto 0;
@@ -860,10 +914,10 @@ section { padding: var(--space-3xl) 0; }
 @media (max-width: 960px) {
   section { padding: var(--space-2xl) 0; }
   .hero-grid, .split, .legal-grid { grid-template-columns: 1fr; gap: var(--space-xl); }
-  .features-grid, .testimonial-grid, .pricing-grid, .help-grid, .footer-grid {
+  .features-grid, .testimonial-grid, .pricing-grid, .help-grid, .footer-grid, .support-grid {
     grid-template-columns: 1fr;
   }
-  .toc { position: static; }
+  .toc, .legal-nav { position: static; }
   .tier-featured { transform: none; }
   .tier-featured:hover { transform: translateY(-4px); }
   .footer-grid { gap: var(--space-md); }
