@@ -1,4 +1,4 @@
-// WineCellar — minimal interactions
+// Céllare — minimal interactions
 (function () {
   'use strict';
 
